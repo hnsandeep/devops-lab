@@ -1,0 +1,36 @@
+https://malco.com/nowplaying/
+
+
+https://archives.jenkins-ci.org/plugins/
+
+
+http://118.174.134.187/download/
+
+
+Steps to Connect via MobaXterm
+Open MobaXterm and click on the Session button (top-left corner).
+
+Select SSH as the session type.
+
+Configure Remote Host:
+
+Remote Host: Paste your instance's Public IP address.
+
+Specify username: Check the box and enter the default username for your AMI (e.g., ec2-user for Amazon Linux, ubuntu for Ubuntu, or admin for Debian).
+
+Attach the SSH Key:
+
+Click on the Advanced SSH settings tab.
+
+Check the Use private key box.
+
+Click the document icon and browse to select your .pem file (MobaXterm supports both .pem and .ppk files).
+
+Connect: Click OK. If prompted with a security alert regarding the host key, click Yes or Accept.
+
+Common Troubleshooting Tips
+Security Group Rules: Ensure your instance's Security Group allows inbound traffic on Port 22 from your current IP address.
+
+Instance State: Double-check that your instance status is "Running" in the EC2 Dashboard.
+
+Username Mismatch: If "ec2-user" doesn't work, try "ubuntu" or "root" depending on the OS you chose during the Launch Instance process.
